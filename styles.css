@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    
 }
 
 header {
@@ -12,24 +13,57 @@ header {
     display: flex;
     justify-content: space-around;
     background-color:black;
+}
+
+.logo {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+.logo img {
+    height: 50px;
+}
     
 nav {
+    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
+nav div {
+    height: 50px;
+    margin-right: 10%;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
 
+
+}
 nav a {
+    float: right;
+    display: block;
+    text-align: right;
     color: white;
     text-decoration: none;
     border: solid;
     border-color:#444857;
     background-color: #444857;
     padding: 8px;
+    margin: 2px;
     border-radius:5%;
-    
 }
+  
+  nav a:hover {
+    border: solid;
+    border-color:white;
+    border-radius:5%;
+    background: #FDCFA5;
+    color: black;
+    font-weight: bold;
+  }
 
 h1 {
     font-size: 30px;
@@ -43,21 +77,35 @@ h1 {
 
 }
 
-.box-1 {
+.boxes {
     display: flex;
-    flex-direction: column;
-    width: 250px;
+    justify-content: center;
 
 }
 
-.box-head {
+.box-1, .box-2 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    box-shadow: 2px 2px lightgray;
+}
+
+.box-head-1 {
     padding: 5px;
     border: solid;
     border-color:#46b8e9;
     background-color:#46b8e9;
     color:white;
-    
 }
+
+.box-head-2 {
+    padding: 5px;
+    border: solid;
+    border-color:#3ee9d1;
+    background-color:#3ee9d1;
+    color:white;
+
+
 .box-number {
     font-size: 30px;
     padding: 2px;
@@ -71,20 +119,8 @@ h1 {
     border-color: white;
     background-color: white;
     color: black;
-    
-
 
 }
-/* nav.a:hover {
-    color:blue;
-} */
-
-/* nav.a:active {
-    color:white;
-    margin: 1px;
-    padding: 2px;
-    background-color: grey;
-} */
     
 
 /* Attempt at styling a flip card  */

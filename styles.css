@@ -25,8 +25,9 @@ header {
     margin-left: 10%;
 
 }
-.logo img {
-    height: 50px;
+.logo img, .logo a {
+    max-height: 44px;
+    margin: 3px;
 }
     
 nav {
@@ -263,6 +264,11 @@ h1 {
     border-top: 0;
     padding: 15px;
   }
+
+  #timeline .demo-card .body #finger {
+    text-align: left;
+  }
+
   @media (min-width: 1000px) {
     #timeline .demo-card .body {
       height: 150px;

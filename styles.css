@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    
+    background-color: #f7f7f7;    
 }
 
 header {
@@ -83,6 +83,17 @@ nav a:hover {
     font-weight: bold;
   }
 
+  a {
+    color: #006466;
+    font-weight: bold;
+}
+  
+a:hover {
+    background: #FDCFA5;
+    color: black;
+    font-weight: bold;
+  }
+
 .main-content {
     color:black;
     background-color: #f7f7f7;
@@ -95,15 +106,29 @@ nav a:hover {
   display: flex;
   align-items: center;
   background-color: #C0E6DE;
-  padding-top:30px;
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-top: 50px;
+
+}
+
+.intro-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #C0E6DE;
+  padding: 60px;
 }
 
 .intro p {
   text-align: center;
-  padding: 50px;
-  padding-left: 200px;
-  padding-right: 200px;
 }
+
+/* .intro img {
+  width: 100%;
+  height: auto;
+} */
+
 
 h1 {
     font-size: 40px;
@@ -117,9 +142,7 @@ h2 {
   font-size: 30px;
   font-weight: 300;
   text-align: center;
-
 }
-
 /* Attempt at styling the timeline  */
 
 
@@ -348,13 +371,30 @@ h2 {
     border-color: #FDCFA5;
   }
 
+
+
+
+
 /* Attempt at styling a flip card  */
 
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding:60px;
+}
+
+.game p{
+  padding:10px;
+  align-items: center;
+}
+
 .flip-card {
-  background-color: transparent;
+  /* background-color: transparent; */
   width: 300px;
-  height: 100px;
+  height: 150px;
   border: 1px solid #f1f1f1;
+  box-shadow: 0px 1px 22px 4px rgb(0 0 0 / 7%);
 }
 
 /* This container is needed to position the front and back side */
@@ -383,13 +423,70 @@ h2 {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color:#0077b6 ;
+  color: white;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #FDCFA5;
+  color: BLACK;
   transform: rotateY(180deg);
+}
+
+/* Styling contact me page */
+
+form {
+  margin: 60px auto;
+  width: 90%;
+}
+
+.form-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.form-item label {
+  flex-basis: 150px;
+}
+
+.form-item input,
+.form-item textarea {
+  flex-basis: 40%;
+  border: 2px solid #006466;
+}
+
+.form-item input:hover,
+.form-item textarea:hover {
+  border: 2px solid #FDCFA5;
+}
+
+.form-item input,
+.form-item textarea,{
+  border: 2px solid #006466;
+  background-color: #FFF;
+  padding: 5px;
+}
+
+.form-item button:hover {
+  border: solid;
+  border-color:white;
+  border-radius:5%;
+  background: #FDCFA5;
+  color: black;
+  font-weight: bold;
+}
+
+.form-item button {
+  width: 100px;
+  color: white;
+  text-decoration: none;
+  border: solid;
+  border-color:#444857;
+  background-color: #444857;
+  padding: 8px;
+  margin: 2px;
+  border-radius:5%;
 }

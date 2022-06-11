@@ -138,6 +138,11 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .short-bio {
   padding-left:150px;
   padding-right: 150px;
@@ -173,7 +178,7 @@ h2 {
   }
   
   .demo-card:nth-child(2) {
-    order: 4;
+    order: 6;
   }
   
   .demo-card:nth-child(3) {
@@ -181,7 +186,7 @@ h2 {
   }
   
   .demo-card:nth-child(4) {
-    order: 5;
+    order: 7;
   }
   
   .demo-card:nth-child(5) {
@@ -189,7 +194,19 @@ h2 {
   }
   
   .demo-card:nth-child(6) {
-    order: 6;
+    order: 8;
+  }
+
+  .demo-card:nth-child(7) {
+    order: 4;
+  }
+
+  .demo-card:nth-child(8) {
+    order: 9;
+  }
+
+  .demo-card:nth-child(9) {
+    order: 5;
   }
   
   /* Border Box */
@@ -212,7 +229,7 @@ h2 {
       display: flex;
       flex-flow: column wrap;
       width: 1170px;
-      height: 1000px;
+      height: 2500px;
       margin: 0 auto;
     }
   }
@@ -251,7 +268,7 @@ h2 {
   @media (min-width: 1000px) {
     #timeline .demo-card {
       max-width: 450px;
-      height: 235px;
+      /* height: 235px; */
       margin: 90px;
       margin-top: 45px;
       margin-bottom: 45px;
@@ -332,7 +349,7 @@ h2 {
 
   @media (min-width: 1000px) {
     #timeline .demo-card .body {
-      height: 150px;
+      /* height: 150px; */
     }
   }
   #timeline .demo-card .body p {
@@ -371,9 +388,31 @@ h2 {
   #timeline .demo-card--step5 .head::after {
     border-color: #FDCFA5;
   }
+  #timeline .demo-card--step6 {
+    background-color: #FDCFA5;
+  }
+  #timeline .demo-card--step6 .head::after {
+    border-color: #FDCFA5;
+  }
+  #timeline .demo-card--step7 {
+    background-color: #FDCFA5;
+  }
+  #timeline .demo-card--step7 .head::after {
+    border-color: #FDCFA5;
+  }
+  #timeline .demo-card--step8 {
+    background-color: #FDCFA5;
+  }
+  #timeline .demo-card--step8 .head::after {
+    border-color: #FDCFA5;
+  }
 
-
-
+  #timeline .demo-card--step9 {
+    background-color: #FDCFA5;
+  }
+  #timeline .demo-card--step9 .head::after {
+    border-color: #FDCFA5;
+  }
 
 
 /* Attempt at styling a flip card  */
